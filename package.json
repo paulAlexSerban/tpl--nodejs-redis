@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "////": "DOCKER",
+    "start:compose": "docker-compose --env-file .env up -d --build",
+    "stop:compose": "docker-compose down --volumes --rmi all"
   },
   "repository": {
     "type": "git",
